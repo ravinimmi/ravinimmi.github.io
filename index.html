@@ -6,17 +6,28 @@
     <title>My test page</title>
   </head>
   <body>
-	<H1>What's up?</H1>
-	<p>Hi this is some random text. And following is an unrelated image.</p>
-  	<img src="images/cool.jpg" alt="My test image">
-	<ol>
-		<li>This</li>
-		<li>is</li>
-		<li>some</li>
-		<li>cool</li>
-		<li>stuff?</li>
-	</ol>
-  <button>Change user</button>
-  <script src="scripts/main.js"></script>
+  	<form action="" onsubmit="return false;"> 
+		<div>
+		<label for="num1">Num1:</label>
+		<input type="text" id="num1" name="num1"/>
+		</div>
+		
+		<div>
+		<label for="num2">Num2:</label>
+		<input type="text" id="num2" name="num2"/>
+		</div>
+		
+		<div class="button">
+		<button id="multiply_button">Multiply</button>
+		</div>
+		
+		<div>
+		<label for="product">Product:</label>
+		<input type="text" id="product" name="product" readonly/>
+		</div>
+		
+		</form>
+	<script src="scripts/main.js"></script>
   </body>
 </html>
+
